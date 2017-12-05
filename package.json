@@ -1,0 +1,41 @@
+{
+  "name": "reactivity-tiles",
+  "version": "0.1.0",
+  "description": "Kind of like GitHub's activity tiles, but different.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack --watch",
+    "test": "echo \"Error: no tests... wat?\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tnez/reactivity-tiles.git"
+  },
+  "keywords": [
+    "react",
+    "component"
+  ],
+  "author": {
+    "name": "Travis Nesland",
+    "email": "tnesland@gmail.com",
+    "url": "https://tnesland.me"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tnez/reactivity-tiles/issues"
+  },
+  "homepage": "https://github.com/tnez/reactivity-tiles#readme",
+  "dependencies": {
+    "react": "^15.5.4",
+    "webpack": "^2.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1"
+  }
+}
