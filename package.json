@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "build-storybook": "build-storybook",
     "start": "webpack --watch",
+    "storybook": "start-storybook -p 6006",
     "test": "echo \"Error: no tests... wat?\" && exit 1"
   },
   "repository": {
@@ -27,10 +29,16 @@
   },
   "homepage": "https://github.com/tnez/reactivity-tiles#readme",
   "dependencies": {
-    "react": "^15.5.4",
+    "babel-runtime": "^6.26.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "webpack": "^2.6.1"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.2.17",
+    "@storybook/addon-links": "^3.2.17",
+    "@storybook/react": "^3.2.17",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
