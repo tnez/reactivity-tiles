@@ -30,6 +30,7 @@
   "homepage": "https://github.com/tnez/reactivity-tiles#readme",
   "dependencies": {
     "babel-runtime": "^6.26.0",
+    "color": "^2.0.1",
     "prop-types": "^15.6.0",
     "ramda": "^0.25.0",
     "react": "^16.2.0",
