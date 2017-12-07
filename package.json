@@ -2,11 +2,11 @@
   "name": "reactivity-tiles",
   "version": "0.1.0",
   "description": "Kind of like GitHub's activity tiles, but different.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "yarn run clean-dist && NODE_ENV=production babel lib -d dist",
     "build-storybook": "build-storybook",
-    "start": "webpack --watch",
+    "clean-dist": "rm -rf ./dist",
     "storybook": "start-storybook -p 6006",
     "test": "echo \"Error: no tests... wat?\" && exit 1"
   },
