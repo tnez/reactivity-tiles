@@ -8,14 +8,14 @@ import { linkTo } from '@storybook/addon-links';
 import { ReactivityBox } from '../lib'
 
 const randomData = compose(
-  map(v => v < 0.15 ? 0 : v),
-  times(() => Math.random() * Math.random())
+  map(v => v < 0.10 ? 0 : v),
+  times(Math.random)
 )
 
 storiesOf('ReactivityBox', module)
   .add('green', () => {
     const dataFetcher = () => new Promise((resolve, reject) =>
-      setTimeout(resolve(randomData(7 * 40)), 2400))
+      setTimeout(resolve(randomData(7 * 40)), 8400))
 
     return (
       <ReactivityBox
