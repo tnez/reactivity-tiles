@@ -13,7 +13,7 @@ const randomData = compose(
 )
 
 storiesOf('ReactivityBox', module)
-  .add('green', () => {
+  .add('darkgreen', () => {
     const dataFetcher = () => new Promise((resolve, reject) =>
       setTimeout(resolve(randomData(7 * 40)), 8400))
 
@@ -21,11 +21,11 @@ storiesOf('ReactivityBox', module)
       <ReactivityBox
         baseColor="#DDD"
         fetchData={dataFetcher}
-        tileColor="green"
+        tileColor="darkgreen"
       />
     )
   })
-  .add('yellow', () => {
+  .add('darkcyan', () => {
     const dataFetcher = () => new Promise((resolve, reject) =>
       setTimeout(resolve(randomData(7 * 40)), 2400))
 
@@ -33,11 +33,23 @@ storiesOf('ReactivityBox', module)
       <ReactivityBox
         baseColor="#DDD"
         fetchData={dataFetcher}
-        tileColor="yellow"
+        tileColor="darkcyan"
       />
     )
   })
-  .add('red', () => {
+  .add('darkblue', () => {
+    const dataFetcher = () => new Promise((resolve, reject) =>
+      setTimeout(resolve(randomData(7 * 40)), 2400))
+
+    return (
+      <ReactivityBox
+        baseColor="#DDD"
+        fetchData={dataFetcher}
+        tileColor="darkblue"
+      />
+    )
+  })
+  .add('darkred', () => {
     const dataFetcher = () => new Promise((resolve, reject) =>
       setTimeout(resolve(randomData(7*40)), 2400))
 
@@ -45,7 +57,7 @@ storiesOf('ReactivityBox', module)
       <ReactivityBox
         baseColor="#DDD"
         fetchData={dataFetcher}
-        tileColor="red"
+        tileColor="darkred"
       />
     )
   })
