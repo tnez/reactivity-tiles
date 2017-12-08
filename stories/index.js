@@ -15,7 +15,7 @@ const randomData = compose(
 storiesOf('ReactivityBox', module)
   .add('darkgreen', () => {
     const dataFetcher = () => new Promise((resolve, reject) =>
-      setTimeout(resolve(randomData(7 * 40)), 8400))
+      setTimeout(resolve(randomData(7 * 53)), 8400))
 
     return (
       <ReactivityBox
@@ -27,7 +27,7 @@ storiesOf('ReactivityBox', module)
   })
   .add('darkcyan', () => {
     const dataFetcher = () => new Promise((resolve, reject) =>
-      setTimeout(resolve(randomData(7 * 40)), 2400))
+      setTimeout(resolve(randomData(7 * 53)), 2400))
 
     return (
       <ReactivityBox
@@ -39,7 +39,7 @@ storiesOf('ReactivityBox', module)
   })
   .add('darkblue', () => {
     const dataFetcher = () => new Promise((resolve, reject) =>
-      setTimeout(resolve(randomData(7 * 40)), 2400))
+      setTimeout(resolve(randomData(7 * 53)), 2400))
 
     return (
       <ReactivityBox
@@ -51,7 +51,7 @@ storiesOf('ReactivityBox', module)
   })
   .add('darkred', () => {
     const dataFetcher = () => new Promise((resolve, reject) =>
-      setTimeout(resolve(randomData(7*40)), 2400))
+      setTimeout(resolve(randomData(7 * 53)), 2400))
 
     return (
       <ReactivityBox
