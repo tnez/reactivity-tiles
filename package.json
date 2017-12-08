@@ -7,6 +7,7 @@
     "build": "yarn run clean-dist && NODE_ENV=production babel lib -d dist",
     "build-storybook": "build-storybook",
     "clean-dist": "rm -rf ./dist",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"lib/**/*.js\" \"stories/**/*.js\"",
     "storybook": "start-storybook -p 6006",
     "test": "echo \"Error: no tests... wat?\" && exit 1"
   },
@@ -48,6 +49,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "prettier": "^1.9.1"
   }
 }

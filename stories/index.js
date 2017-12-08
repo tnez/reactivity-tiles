@@ -1,21 +1,20 @@
-import React from 'react';
+import React from 'react'
 import { compose, map, times } from 'ramda'
 
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
+import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
+import { linkTo } from '@storybook/addon-links'
 
 import { ReactivityBox } from '../lib'
 
-const randomData = compose(
-  map(v => v < 0.10 ? 0 : v),
-  times(Math.random)
-)
+const randomData = compose(map(v => (v < 0.1 ? 0 : v)), times(Math.random))
 
 storiesOf('ReactivityBox', module)
   .add('darkgreen', () => {
-    const dataFetcher = () => new Promise((resolve, reject) =>
-      setTimeout(resolve(randomData(7 * 53)), 8400))
+    const dataFetcher = () =>
+      new Promise((resolve, reject) =>
+        setTimeout(resolve(randomData(7 * 53)), 8400)
+      )
 
     return (
       <ReactivityBox
@@ -26,8 +25,10 @@ storiesOf('ReactivityBox', module)
     )
   })
   .add('darkcyan', () => {
-    const dataFetcher = () => new Promise((resolve, reject) =>
-      setTimeout(resolve(randomData(7 * 53)), 2400))
+    const dataFetcher = () =>
+      new Promise((resolve, reject) =>
+        setTimeout(resolve(randomData(7 * 53)), 2400)
+      )
 
     return (
       <ReactivityBox
@@ -38,8 +39,10 @@ storiesOf('ReactivityBox', module)
     )
   })
   .add('darkblue', () => {
-    const dataFetcher = () => new Promise((resolve, reject) =>
-      setTimeout(resolve(randomData(7 * 53)), 2400))
+    const dataFetcher = () =>
+      new Promise((resolve, reject) =>
+        setTimeout(resolve(randomData(7 * 53)), 2400)
+      )
 
     return (
       <ReactivityBox
@@ -50,8 +53,10 @@ storiesOf('ReactivityBox', module)
     )
   })
   .add('darkred', () => {
-    const dataFetcher = () => new Promise((resolve, reject) =>
-      setTimeout(resolve(randomData(7 * 53)), 2400))
+    const dataFetcher = () =>
+      new Promise((resolve, reject) =>
+        setTimeout(resolve(randomData(7 * 53)), 2400)
+      )
 
     return (
       <ReactivityBox
