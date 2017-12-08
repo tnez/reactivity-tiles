@@ -5,22 +5,21 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 
-import { ReactivityBox } from '../lib'
+import { ReactivityTiles } from '../lib'
 
 const randomData = compose(map(v => (v < 0.1 ? 0 : v)), times(Math.random))
 
-storiesOf('ReactivityBox', module)
+storiesOf('ReactivityTiles', module)
   .add('darkgreen', () => {
     const dataFetcher = () =>
       new Promise((resolve, reject) =>
-        setTimeout(resolve(randomData(7 * 53)), 8400)
+        setTimeout(resolve(randomData(7 * 53)), 2400)
       )
 
     return (
-      <ReactivityBox
-        baseColor="#DDD"
+      <ReactivityTiles
         fetchData={dataFetcher}
-        tileColor="darkgreen"
+        maxColor="darkgreen"
       />
     )
   })
@@ -31,10 +30,9 @@ storiesOf('ReactivityBox', module)
       )
 
     return (
-      <ReactivityBox
-        baseColor="#DDD"
+      <ReactivityTiles
         fetchData={dataFetcher}
-        tileColor="darkcyan"
+        maxColor="darkcyan"
       />
     )
   })
@@ -45,10 +43,9 @@ storiesOf('ReactivityBox', module)
       )
 
     return (
-      <ReactivityBox
-        baseColor="#DDD"
+      <ReactivityTiles
         fetchData={dataFetcher}
-        tileColor="darkblue"
+        maxColor="darkblue"
       />
     )
   })
@@ -59,10 +56,9 @@ storiesOf('ReactivityBox', module)
       )
 
     return (
-      <ReactivityBox
-        baseColor="#DDD"
+      <ReactivityTiles
         fetchData={dataFetcher}
-        tileColor="darkred"
+        maxColor="darkred"
       />
     )
   })
