@@ -16,12 +16,7 @@ storiesOf('ReactivityTiles', module)
         setTimeout(resolve(randomData(7 * 53)), 2400)
       )
 
-    return (
-      <ReactivityTiles
-        fetchData={dataFetcher}
-        maxColor="darkgreen"
-      />
-    )
+    return <ReactivityTiles fetchData={dataFetcher} maxColor="darkgreen" />
   })
   .add('darkcyan', () => {
     const dataFetcher = () =>
@@ -29,12 +24,7 @@ storiesOf('ReactivityTiles', module)
         setTimeout(resolve(randomData(7 * 53)), 2400)
       )
 
-    return (
-      <ReactivityTiles
-        fetchData={dataFetcher}
-        maxColor="darkcyan"
-      />
-    )
+    return <ReactivityTiles fetchData={dataFetcher} maxColor="darkcyan" />
   })
   .add('darkblue', () => {
     const dataFetcher = () =>
@@ -42,12 +32,7 @@ storiesOf('ReactivityTiles', module)
         setTimeout(resolve(randomData(7 * 53)), 2400)
       )
 
-    return (
-      <ReactivityTiles
-        fetchData={dataFetcher}
-        maxColor="darkblue"
-      />
-    )
+    return <ReactivityTiles fetchData={dataFetcher} maxColor="darkblue" />
   })
   .add('darkred', () => {
     const dataFetcher = () =>
@@ -55,10 +40,5 @@ storiesOf('ReactivityTiles', module)
         setTimeout(resolve(randomData(7 * 53)), 2400)
       )
 
-    return (
-      <ReactivityTiles
-        fetchData={dataFetcher}
-        maxColor="darkred"
-      />
-    )
+    return <ReactivityTiles fetchData={dataFetcher} maxColor="darkred" />
   })
