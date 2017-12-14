@@ -1,2 +1,6 @@
 .babelrc
+.storybook
+/data
 /lib
+/stories
+/storybook-static
